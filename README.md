@@ -5,11 +5,9 @@ This is to create a Prisma Cloud Compute OneBox installation on Azure.
 ## Prequisites:
 1. Terraform v1.0 and above
 
-2. SSH key pair (RSA)
+2. Prisma Cloud Compute license key
 
-3. Prisma Cloud Compute license key
-
-4. URL to download Prisma Cloud Compute Edition installation tarball
+3. URL to download Prisma Cloud Compute Edition installation tarball
 
 
 

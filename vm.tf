@@ -27,7 +27,7 @@ resource "azurerm_network_interface" "eth0" {
   tags = local.common_tags
 }
 
-# Creating Storage Account for Boot Diagnostics for Serial Console access to VMs
+# Creating Storage Account for Boot Diagnostics for Serial Console access to VM
 resource "azurerm_storage_account" "diag-storage-account" {
   name                     = "diag${random_id.randomId.hex}"
   location                 = azurerm_resource_group.main.location
@@ -40,7 +40,7 @@ resource "azurerm_storage_account" "diag-storage-account" {
   depends_on = [random_id.randomId]
 }
 
-# Create Sandbox VM
+# Create OneBox VM
 resource "azurerm_linux_virtual_machine" "onebox" {
   name                = var.vmName
   computer_name       = var.vmName
